@@ -9,7 +9,7 @@ import pickle
 import streamlit as st
 
 # Load trained model
-loaded_model = pickle.load(open('D:/internship/weather_app/weather.sav', 'rb'))
+loaded_model = pickle.load(open('weather.sav', 'rb'))
 
 def weather_prediction(input_data):
     input_data_as_array = np.asarray(input_data, dtype=float)
